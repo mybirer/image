@@ -14,7 +14,7 @@ gem "image_processing"
 gem "librato-metrics", "= 1.6.1"
 gem "librato-rack"
 gem "mime-types"
-gem 'nokogumbo', '~> 2.0', '>= 2.0.4'
+gem 'nokogumbo', '~> 2.0', '= 2.0.4'
 gem "redis"
 gem "ruby-vips"
 gem "sidekiq"
