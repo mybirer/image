@@ -10,9 +10,6 @@ unless ENV["CI"]
   ENV["REDIS_URL"] = "redis://localhost:%d" % port
   redis_test_instance = IO.popen("redis-server --port %d --save '' --appendonly no" % port)
 
-  Minitest.after_run do
-    Process.kill("INT", redis_test_instance.pid)
-  end
 end
 
 require "sidekiq/testing"
